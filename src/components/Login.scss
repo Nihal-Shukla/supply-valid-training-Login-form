@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$height:40px;
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, #db3390, #d73131c2);
+    position: fixed;
+}
+
+.form{
+    height: 550px;
+    width: 450px;
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 30px;   
+}
+
+.image-box{
+    height: 100px;
+    width: 450px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.image{
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+
+h2{
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:  25px;
+    margin-top: -$height - 10px;
+}
+
+.text{
+    font-size: 22px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.input-field{
+    height: 50px;
+    width: 400px;
+    font-size: larger;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+}
+.input-field:focus{
+    outline: none;
+}
+
+.placeholder-logo{
+    font-size: 20px;
+    color: #777575;
+    margin-left: 20px;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.checkbox-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: larger; 
+    margin-top: 10px; 
+
+}
+
+.remb-section{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #535353;
+}
+
+     .login{
+            height: 50px;
+            width: 400px;
+            background-image: linear-gradient(to bottom, #3b63c5, #39a4ff);
+            color: azure;
+            font-size: larger;
+            margin-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login:hover{
+            cursor: pointer;
+        }
+          .icon{
+            height: 60px;
+            width: 250px;
+            /* border: 1px solid black; */
+            margin-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            /* border: 1px solid black; */
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to bottom, #3b63c5, #39a4ff);
+            color: #ffff;
+            
+        }
+
+        .box:hover{
+            cursor: pointer;
+            font-size: $height;
+            background-image: none;
+            color: #39a4ff; 
+        }
+
+        .dont{
+            font-size: larger;
+            color: #535353;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        
+
+        @media screen and (max-width :500px){
+            .form{
+                height: 450px;
+                width: 350px;
+            }
+            h2{
+                font-size: 20px;
+                margin-bottom: -10px;
+                margin-top: -$height;
+            }
+
+            .input-field{
+                height: $height;
+                width: 300px;
+            }
+            .login{
+                height: $height;
+                width: 300px;
+            }
+
+            .image-box{
+                height: 70px;
+                width: 300px;
+                margin-left: 100px;
+                width: 71.5%;
+            }
+
+            .remb-section{
+                font-size: 15px;
+            }
+
+            .text{
+                font-size: 15px;
+            }
+            .box{
+                height: $height;
+                width: $height;
+            }
+            .box:hover{
+                font-size: 30px;
+
+            }
+            .input-field{
+                font-size: small;
+            }
+            .placeholder-logo{
+                font-size: 15px;
+            }
+            .icon{
+                height: $height;
+                width: 200px;
+                margin: 25px 0px -10px 20px;
+            }
+            .dont{
+                font-size: 17px;
+                
+            }
+            
+        }
