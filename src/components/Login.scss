@@ -3,19 +3,19 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 $height:40px;
-
+@mixin dispaly-center{
+display: flex;
+align-items: center;
+}
 .container{
     height: 100vh;
     width: 100vw;
-    display: flex;
-    align-items: center;
+    @include dispaly-center;
     justify-content: space-around;
     background-image: linear-gradient(to bottom, #db3390, #d73131c2);
     position: fixed;
 }
-
 .form{
     height: 550px;
     width: 450px;
@@ -23,40 +23,32 @@ $height:40px;
     background-color: white;
     border-radius: 30px;   
 }
-
 .image-box{
     height: 100px;
     width: 450px;
     /* border: 1px solid black; */
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
-
 .image{
     margin-top: 0px;
-    padding-top: 0px;
-    
+    padding-top: 0px; 
 }
-
 h2{
     margin-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight:  25px;
     margin-top: -$height - 10px;
 }
-
 .text{
     font-size: 22px;
     padding-left: 30px;
     padding-top: 20px;
 }
-
 .input-field{
     height: 50px;
     width: 400px;
     font-size: larger;
-    /* border: 1px solid black; */
     margin-top: 10px;
     margin-left: 10px;
     border: none;
@@ -64,37 +56,30 @@ h2{
 .input-field:focus{
     outline: none;
 }
-
 .placeholder-logo{
     font-size: 20px;
     color: #777575;
     margin-left: 20px;
 }
-
 hr{
     margin-left: 20px;
     margin-right: 20px;
 }
-
-
 .checkbox-section{
     display: flex;
     justify-content: space-between;
     padding: 20px;
     font-size: larger; 
     margin-top: 10px; 
-
 }
-
 .remb-section{
-    display: flex;
+   @include dispaly-center;
     align-items: center;
     padding-left: 10px;
     font-size: 20px;
     color: #535353;
 }
-
-     .login{
+    .login{
             height: 50px;
             width: 400px;
             background-image: linear-gradient(to bottom, #3b63c5, #39a4ff);
@@ -102,9 +87,8 @@ hr{
             font-size: larger;
             margin-left: 20px;
             margin-top: 20px;
-            display: flex;
+           @include dispaly-center;
             justify-content: center;
-            align-items: center;
         }
 
         .login:hover{
@@ -116,8 +100,7 @@ hr{
             /* border: 1px solid black; */
             margin-left: 20px;
             margin-top: 20px;
-            display: flex;
-            align-items: center;
+            @include dispaly-center;
             justify-content: space-between;
         }
 
@@ -126,30 +109,24 @@ hr{
             width: 50px;
             /* border: 1px solid black; */
             border-radius: 50px;
-            display: flex;
+            @include dispaly-center;
             justify-content: center;
-            align-items: center;
             background-image: linear-gradient(to bottom, #3b63c5, #39a4ff);
-            color: #ffff;
-            
-        }
-
-        .box:hover{
+            color: #ffff;           
+        } 
+            .box:hover{
             cursor: pointer;
             font-size: $height;
             background-image: none;
             color: #39a4ff; 
         }
-
         .dont{
             font-size: larger;
             color: #535353;
             margin-top: 30px;
             margin-left: 20px;
         }
-        
-
-        @media screen and (max-width :500px){
+           @media screen and (max-width :500px){
             .form{
                 height: 450px;
                 width: 350px;

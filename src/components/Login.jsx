@@ -50,13 +50,10 @@ function Login() {
     <div className="box"><i class="fa-brands fa-codepen"></i></div>
 </div>
 
-<p className='dont' e>Dont have an account ? Register here </p>
+<p className='dont'>Dont have an account ? Register here </p>
 </div>
 </div>
-
-
-    </>
+</>
   )
 }
-
 export default Login
